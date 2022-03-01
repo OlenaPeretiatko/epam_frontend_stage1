@@ -1,0 +1,359 @@
+/*   Body for all media queries */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+.grey {
+    color: #979797;
+
+}
+.blue {
+    color: #0078aa;
+}
+
+nav > a:hover, i > a:hover {
+    color: #0078aa;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*     Header for all media queries  */
+header {
+    width: 80%;
+    position: fixed;
+    margin: 1% 10%;
+}
+
+nav {
+    float: right;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav > a {
+    margin-right: 15px;
+    color: black;
+}
+
+i > a {
+    color: white;
+}
+
+
+.arrow-up {
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/*     Main for all media queries  */
+/*     Section with lady for all media queries   */
+#ladySection {
+    background: url("/homework/img/lady.jpg") center;
+    background-size: cover;
+    width: 100%;
+}
+
+#ladySectionText {
+    padding: 10% 0%;
+}
+
+
+.icon-background {
+    color: #0078aa;
+}
+
+.faIcon{
+    color: white;
+    background-color: #0078aa;
+    border: 1px solid #0078aa;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 35px;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    font-size: 45px;
+}
+
+.faIcon:hover, button:hover{
+    color: #0078aa;
+    background-color:white;
+}
+/*     Section About Clinic for all media queries    */
+#aboutClinicSection {
+    display: flex;
+}
+
+.arrow {
+    padding-right: 5px;
+    font-size: 12px;
+    font-family: Arial, serif;
+}
+
+/*     Section How We Can Help You for all media queries    */
+#helpSection {
+    background-image: url("/homework/img/services_bg.jpg");
+    padding: 5% 0%;
+}
+
+#helpSection > h1, #helpSection > p {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > div {
+    background-color: white;
+    display: inline-block;
+    margin: 1%;
+    padding: 2%;
+}
+
+/*     Section Special Offers for all media queries   */
+#specialOffersSection {
+    margin: 5% auto;
+    text-align: center;
+}
+
+#specialOffers > p {
+    margin-top: -20px;
+}
+
+input:focus {
+    outline: 0;
+}
+.offer {
+    padding: 3%;
+    margin-right: -4px;
+}
+
+.offer > p {
+    line-height: 40px;
+}
+
+.allergyOrDental {
+    color: white;
+    background-color: #00cce9;
+}
+
+.eye {
+    background-color: white;
+    border: 1px solid #0078aa;
+}
+
+.getNow {
+    background-color: white;
+    color: #0078aa;
+}
+
+.getNow, form > button {
+    border: 2px solid #0078aa;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    padding: 3% 7%;
+    border-radius: 10px;
+}
+
+
+/*     Make an Appointment Section for all media queries  */
+
+#makeAppointmentSection {
+    margin-top: 100px;
+}
+
+#makeAppointmentSection > div {
+    margin-left: 3%;
+}
+
+#appointment {
+    padding-bottom: 10%;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+form > input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.84);
+    margin-top: 8%;
+    display: block;
+}
+
+form > button {
+    margin-top: 5%;
+    background-color: #0078aa;
+    color: white;
+}
+
+/*     Footer for all media queries   */
+footer {
+    margin-top: -15px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    background-color: #363636;
+}
+
+/*   for phones    */
+@media only screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    #ladySectionText > h1::after {
+        content: "\a Professional \a Developers \a Health Care";
+        white-space: pre;
+    }
+
+    #ladySection {
+        text-align: center;
+        margin: auto 2%;
+    }
+
+    #aboutClinicSection {
+        margin: auto 2%;
+        text-align: center;
+        display: block;
+    }
+
+    .row > div {
+        margin: 2%;
+    }
+
+    #tools {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .offer {
+        margin: 2%;
+    }
+
+    #contactImg {
+        width: 100%;
+    }
+
+    form {
+        text-align: center;
+    }
+}
+
+
+/*   for tablets and desktops    */
+@media only screen and (min-width: 768px) {
+
+    #ladySectionText > h1::after {
+        content: "Professional Developers \a Health Care";
+        white-space: pre;
+    }
+
+    p.grey {
+        white-space: pre;
+    }
+
+    #textClinic {
+        padding: 5% 1%;
+    }
+
+    #specialOffers {
+        background: url("/homework/img/tools.png") right;
+    }
+
+    .row > div {
+        width: 27%;
+    }
+
+    #makeAppointmentSection {
+        display: flex;
+    }
+
+    #appointmentImg {
+        background: url("/homework/img/contact_image.jpg"), left;
+        background-size: cover;
+        width: 50%;
+    }
+
+    #contactImg {
+        display: none;
+    }
+
+    .offer {
+        padding: 3%;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .eye {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+}
+
+
+/*   for tablets    */
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    #ladySectionText {
+        padding-left: 2%;
+    }
+
+    #tools {
+        margin-top: 180px;
+        width: 446px;
+        height: 300px;
+    }
+
+    #textClinic {
+        width: 60%;
+        margin-right: 2%;
+    }
+
+    #helpSection {
+        padding: 2% 2%;
+    }
+
+    .offer {
+        width: 25%;
+    }
+}
+
+
+/*   for desktops    */
+@media only screen and (min-width: 1280px) {
+
+    #ladySectionText {
+        padding-left: 10%;
+    }
+
+    #tools {
+        margin-top: 100px;
+        width: 737px;
+        height: 496px;
+    }
+
+    #textClinic {
+        margin-right: 10%;
+    }
+
+    #helpSection {
+        padding: 5% 5%;
+    }
+
+    .offer {
+        width: 20%;
+    }
+}
+
+

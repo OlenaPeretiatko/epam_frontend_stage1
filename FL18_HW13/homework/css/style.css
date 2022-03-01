@@ -1,0 +1,72 @@
+body{
+    font-family: "Roboto", serif;
+    color: #111;
+}
+@media (max-width: 768px) {
+    .reorder {
+        flex-direction: column-reverse;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+button, footer input {
+    color: white;
+    padding: 10px 10px;
+}
+
+header button {
+    background-color: #333a41;
+    border: 1px solid black;
+}
+
+#home button, footer input[type="button"] {
+    background-color: coral;
+    border: 1px solid lightcoral;
+}
+
+#home button, footer input {
+    border-radius: 5px;
+}
+
+.container-fluid {
+    background-color: #333a41;
+    color: white;
+}
+
+#gamesSection1 {
+    margin: 5% auto;
+    padding: 5% 0%;
+}
+
+.imgGamesSection {
+    margin: 10% 0% 5% 0%;
+    border-radius: 1%;
+}
+
+#gamesSection1 .imgGamesSection {
+    box-shadow: 1px 1px 10px 5px #252a31;
+}
+
+#gamesSection2 {
+    margin: 5% auto;
+}
+
+#gamesSection2 .imgGamesSection {
+    box-shadow: 1px 1px 10px 5px rgba(192, 192, 192, 0.71);
+}
+
+footer .row {
+    padding-top: 5%;
+}
+
+footer input {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.copyright {
+    margin-top: 5%;
+}

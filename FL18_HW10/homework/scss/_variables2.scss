@@ -1,0 +1,73 @@
+@import "main";
+
+$imgNight: url('/homework/img/m-h-night.jpg');
+$backgroundNight: #2b2f3d;
+$sectionBlueNight: #3a3f52;
+$myYellow: #eda900;
+$myPink: #9e1e55;
+$highlighterNight: #ff361b;
+
+
+@mixin simpleText {
+  font: {
+    family: 'Fresca', sans-serif;
+    size: 13px;
+  }
+}
+
+$font: (
+        hind: ('Hind', sans-serif),
+        sansPro: ('Source Sans Pro', sans-serif),
+        fresca: ('Fresca', sans-serif),
+);
+
+body {
+  background-color: $backgroundNight;
+  color: white;
+}
+
+.header {
+  background: $imgNight 110% 50% no-repeat;
+}
+
+.landing-logo {
+  width: 10%;
+  p {
+    font: {
+      family: map-get($font, fresca);
+      size: 17px;
+    }
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+.header_text, .section_card_text, .section_link, .section_banner_text, footer {
+  @include simpleText;
+}
+
+.header_button, .section_banner_button {
+  background-color: $myYellow;
+}
+
+.section_card {
+  font-family: map-get($font, hind);
+}
+
+//bottom
+.section_banner {
+  background: linear-gradient(to right, $myYellow, $myPink);
+}
+
+//footer
+footer, .section_card {
+  background-color: $sectionBlueNight;
+}
+
+.highlight {
+  background-color: $highlighterNight;
+}

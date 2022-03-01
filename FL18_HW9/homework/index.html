@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 9 - JS DOM Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="body">
+  <div id="task1">
+<!--     TEMPLATE FOR TASK 1 GOES HERE-->
+    <table>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Special Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </table>
+
+  </div>
+
+<div id="task2">
+    <div id="dataRes"></div>
+    <input id="phone" required pattern="^[+380][0-9]{12}"
+           placeholder="Type phone number in format +380*********">
+    <button disabled id="myBtn" type="submit" onclick="checkData()">Send</button>
+</div>
+
+<div id="task3">
+    <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+
+    <div id="court">
+        <img id="ball" src="assets/ball.png">
+    </div>
+    <div id="score-left"> Team A: 0</div>
+    <div id="score-right"> Team B: 0</div>
+    <p id="score"></p>
+
+</div>
+
+<script src="./index.js"></script>
+</body>
+
+</html>

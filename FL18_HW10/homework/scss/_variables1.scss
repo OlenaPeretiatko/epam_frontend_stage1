@@ -1,0 +1,81 @@
+@import "main";
+
+$imgDay: url('/homework/img/m-h-day.jpg');
+$headerBlueText: #2b2f3d;
+$sectionBlueDay: #20232f;
+$myGreen: #5a9b00;
+$myBlue: #165be2;
+$highlighterDay: #00a3cb;
+
+$font: (
+        hind: ('Hind', sans-serif),
+        sansPro: ('Source Sans Pro', sans-serif),
+        fresca: ('Fresca', sans-serif),
+);
+
+@mixin simpleText {
+  font: {
+    family: 'Hind', sans-serif;
+    size: 13px;
+  }
+}
+
+.header {
+  background: $imgDay 110% 50% no-repeat;
+}
+
+.landing-logo {
+  width: 10%;
+
+  p {
+    font: {
+      family: map-get($font, hind);
+      size: 17px;
+    }
+    text-align: center;
+    color: $headerBlueText;
+  }
+
+  span {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+.header_text, .header_heading {
+  color: $headerBlueText;
+}
+
+.header_text, .section_card_text, .section_link, .section_banner_text, footer {
+  @include simpleText;
+}
+
+.header_button, .section_banner_button {
+  background-color: $myGreen;
+}
+
+.section_card {
+  font-family: map-get($font, hind);
+}
+
+//bottom
+.section_banner {
+  background: linear-gradient(to right, $myGreen, $myBlue);
+}
+
+//footer
+footer, .section_card {
+  background-color: $sectionBlueDay;
+}
+
+.highlight {
+  background-color: $highlighterDay;
+}
+
+footer {
+  .landing-logo {
+    p {
+      color: white;
+    }
+  }
+}

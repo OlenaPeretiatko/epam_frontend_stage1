@@ -1,0 +1,81 @@
+/* START: Task 1 Styles */
+table{
+    background-color: green;
+    width: 100%;
+}
+td{
+    border: 1px solid black;
+    width: 33.33%;
+    padding: 13%;
+    text-align: center;
+    background-color: white;
+}
+/* END: Task 1 Styles */
+#task1{
+    width: 40%;
+    margin: 0px auto;
+    position: center;
+}
+/* START: Task 2 Styles */
+
+#task2{
+    margin: 10% 34%;
+}
+input{
+    height: 30px;
+    width: 78%;
+}
+input:invalid {
+    box-shadow: 0 0 3px 1px red;
+}
+button{
+    margin-left: 3px;
+    width: 17%;
+    height: 36px;
+}
+#dataRes{
+    padding: 20px 10px;
+    color: white;
+    margin-bottom: 10px;
+    width: 93%;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+
+span{
+    margin: 562px 520px;
+}
+#task3{
+    margin: 13% 21%;
+}
+#court{
+    background-image: url('assets/court.png');
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+#ball{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: 142px 280px;
+}
+
+#score-left{
+    margin-left: 120px;
+    float: left;
+}
+#score-right{
+    margin-right: 120px;
+    float: right;
+}
+#score{
+    text-align: center;
+}
+/* END: Task 3 Styles */
+
+
